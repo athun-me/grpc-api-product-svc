@@ -29,7 +29,7 @@ func (s *Server) CreateProduct(ctx context.Context, req *pb.CreateProductRequest
 	}
 
 	return &pb.CreateProductResponse{
-		Status: http.StatusCreated,
+		Status: http.StatusFound,
 		Id:     product.Id,
 	}, nil
 }
